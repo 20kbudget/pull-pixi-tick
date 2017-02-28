@@ -1,12 +1,17 @@
 {
   "name": "pull-pixi-sprite-event",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A pull-stream through that will throttle the source until a Pixi.js sprite event happens",
   "main": "index.js",
   "repository": "git@github.com:20kbudget/pull-pixi-sprite-event.git",
   "author": "Fabricio C Zuardi <fabricio@fabricio.org>",
   "license": "MIT",
-  "keywords": ["pull-stream", "pixi", "pixi.js", "events"],
+  "keywords": [
+    "pull-stream",
+    "pixi",
+    "pixi.js",
+    "events"
+  ],
   "devDependencies": {
     "prettier": "^0.20.0"
   },
