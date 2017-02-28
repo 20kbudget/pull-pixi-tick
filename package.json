@@ -13,13 +13,18 @@
     "events"
   ],
   "devDependencies": {
-    "browserify": "^14.1.0",
-    "es2020": "^1.1.9",
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2020": "^1.0.2",
     "prettier": "^0.20.0"
+  },
+  "babel": {
+    "presets": [
+      "es2020"
+    ]
   },
   "scripts": {
     "format": "prettier --write --single-quote --tab-width 4 --",
-    "build": "browserify index.js -t es2020 -o dist/index.js",
+    "build": "babel index.js -o dist/index.js",
     "postbuild": "cp README.md LICENSE dist/."
   }
 }
