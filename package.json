@@ -25,6 +25,6 @@
   "scripts": {
     "format": "prettier --write --single-quote --tab-width 4 --",
     "build": "babel index.js -o dist/index.js",
-    "postbuild": "cp README.md LICENSE dist/."
+    "postbuild": "cp README.md LICENSE package.json dist/."
   }
 }
