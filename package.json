@@ -13,9 +13,13 @@
     "events"
   ],
   "devDependencies": {
+    "browserify": "^14.1.0",
+    "es2020": "^1.1.9",
     "prettier": "^0.20.0"
   },
   "scripts": {
-    "format": "prettier --write --single-quote --tab-width 4 --"
+    "format": "prettier --write --single-quote --tab-width 4 --",
+    "build" : "browserify index.js -t es2020 -o dist/index.js",
+    "postbuild": "cp README.md LICENSE dist/."
   }
 }
