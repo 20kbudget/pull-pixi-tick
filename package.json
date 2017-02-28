@@ -6,6 +6,7 @@
   "repository": "git@github.com:20kbudget/pull-pixi-sprite-event.git",
   "author": "Fabricio C Zuardi <fabricio@fabricio.org>",
   "license": "MIT",
+  "keywords": ["pull-stream", "pixi", "pixi.js", "events"],
   "devDependencies": {
     "prettier": "^0.20.0"
   },
