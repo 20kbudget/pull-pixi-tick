@@ -1,4 +1,3 @@
-
 const listen = (sprite, eventName) => read => (abort, cb) => read(abort, (
     end,
     data
