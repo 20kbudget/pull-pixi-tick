@@ -11,7 +11,8 @@ yarn add pull-pixi-tick
 
 ```javascript
 const pull = require('pull-stream')
-const tickThrough = require('pull-pixi-tick')
+const tickThrough = require('pull-pixi-tick').through
+const tickSource = require('pull-pixi-tick').source
 const {Application} = require('pixi.js')
 
 const {view, ticker} = new Application()
@@ -23,6 +24,10 @@ pull(
     pull.log()
 );
 
+pull(
+    tickSource(ticker),
+    pull.log()
+)
 ```
 [pull-stream]: https://github.com/pull-stream/pull-stream
 [Through]: https://github.com/pull-stream/pull-stream/blob/master/docs/throughs/index.md
