@@ -1,15 +1,10 @@
-const listen = (sprite, eventName) => read => (abort, cb) => read(abort, (
-    end,
-    data
-) => {
-    sprite.interactive = end ? false : true;
+module.exports = ticker => read => (abort, cb) => read(abort, (end, data) => {
     if (end) {
         return cb(end, data);
     }
-    sprite.on(eventName, event => {
-        sprite.off(eventName);
+    const listener = () => {
+        ticker.remove(listener);
         cb(end, data);
-    });
+    };
+    ticker.add(listener);
 });
-
-module.exports = listen;
