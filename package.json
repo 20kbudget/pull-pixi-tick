@@ -1,6 +1,6 @@
 {
   "name": "pull-pixi-tick",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A pull-stream through that will throttle the source until the next tick of a Pixi.js ticker",
   "main": "index.js",
   "repository": "git@github.com:20kbudget/pull-pixi-tick.git",
